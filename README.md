@@ -1,6 +1,8 @@
 # Professional-Portfolio
+![image](https://user-images.githubusercontent.com/81110745/121331084-e79c8900-c959-11eb-8984-f50913328187.png)
 
-HTML Contents:
+## HTML Contents:
+```
 Structure 
 Head
 Body
@@ -10,9 +12,10 @@ Articles
 Cards
 Form
 Footer
+```
 
-
-CSS Contents:
+## CSS Contents:
+```
 root colours
 Body
 Headers
@@ -23,7 +26,7 @@ Cards
 Form
 Footer
 Responsive
-
+```
 
 ## User Story
 
