@@ -1,0 +1,211 @@
+/* Structure 
+root colours
+Body
+Headers
+Navbar
+Main
+Articles
+Cards
+Form
+Footer
+Responsive
+*/
+
+/* root colours */
+:root {
+  --backg: #fadfdf;
+  --blackc: #000000;
+  --headings: #f44647;
+}
+/* Body */
+body {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+  background-color: var(--backg);
+  color: var(--blackc);
+}
+/* Headers */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  background-color: white;
+  color: var(--headings);
+}
+
+h1 {
+  font-size: 200%;
+}
+
+h2 {
+  margin: 2% 0;
+  font-size: 250%;
+}
+
+h3 {
+  padding: 5px;
+}
+/* Navbar */
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+}
+
+nav a {
+  color: var(--blackc);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--headings);
+}
+
+#home {
+  color: var(--headings);
+  border-bottom: 1px solid #13293d;
+  text-align-last: center;
+}
+/* Main */
+main {
+  flex: 1 1 0;
+  max-width: 96%;
+  margin: 2% auto;
+}
+/* Articles */
+article {
+  border-bottom: 1px solid #13293d;
+}
+
+article p {
+  margin: 2% 0;
+  font-size: 110%;
+}
+
+article ul {
+  margin-left: 5%;
+  font-size: 110%;
+  list-style: circle;
+}
+
+article li {
+  margin: 5px 0;
+}
+
+article ul li:nth-child(even) {
+  color: white;
+  background-color: var(--headings);
+}
+/* Cards */
+.card {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 10px;
+  flex: 0 0 400px;
+}
+
+.card header {
+  padding: 20px;
+}
+
+.card p {
+  text-align: center;
+}
+
+.card img {
+  padding: 20px;
+  background-color: rgb(128, 0, 96);
+  transition: transform .2s; /* Animation */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.card img:hover{
+  transform: scale(1.2); /* (120% zoom) */
+}
+
+/* Form */
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("../images/arrow.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+.text-input {
+  width: 100%;
+  max-width: 100%;
+}
+
+.text-input, select {
+  padding: 1%;
+  outline: none;
+  border: 1.2px solid #b9C6ae;
+}
+
+.text-input:hover, .checkbox:hover, 
+select:hover, button:hover {
+  box-shadow: 0 0 5px #999;
+}
+
+/* The right-side border changes when the element is clicked on or tabbed into */
+.text-input:focus {
+  border-right-width: 5px;
+}
+
+/* The border becomes dashed when the element's placeholder text is visible */
+.text-input:placeholder-shown {
+  border-style: dashed;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+}
+
+.flex-row select {
+  flex: 1 0 0;
+  margin-left: 2%;
+}
+
+.flex-row input {
+  margin-right: 2%;
+}
+
+/* The font style of the adjacent element changes when the given element is checked */
+.checkbox:checked + label {
+  color: #999999;
+  font-style: italic;
+}
+
+/* When checked, the adjacent element has text insert at the end */
+.checkbox:checked + label::after {
+  margin-left: 10px;
+  font-size: 90%;
+  content: "(thanks!)";
+}
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  background-color: white;
+  color: black;
+}
+/* Responsive */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  main {
+    max-width: 1200px;
+  }
+}

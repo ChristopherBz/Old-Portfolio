@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CB Professional Portfolio</title>
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Full Stack Web Developer</h1>
+    
+    <!-- Navbar -->
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home -->
+    <section id="home" class="home">
+      <div>                        
+          <h1>Hello <span>I’m Christopher Balanzategui</span></h1>
+          <img src="assets/images/photo-1.jpg" alt="Christopher Balanzategui">                        
+      </div>
+    </section>
+    <!-- Services -->
+      <article id="services" class="services">
+        <h2>Services</h2>
+        <div>
+          <p>A successful web developer is one that knows that there's always room to grow and learn. Here is a list of my abilities:</p>
+          <ul>
+            <li> HTML
+              <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">Hypertext Markup Language</a> The bones of your website.
+            </li>
+            <li> Cascading Style Sheets
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">(CSS)</a> gives the look you want.
+            </li>
+            <li>JavaScript <a href="https://www.javascript.com/">JS</a> the functionality you love.
+            </li>
+            <li>Algorithms
+              <a href="https://www.thinkautomation.com/eli5/what-is-an-algorithm-an-in-a-nutshell-explanation/">Algo</a> a series of instructions to do something useful or solve a problem</li>
+            <li>API management <a href="https://www.mulesoft.com/resources/api/what-is-an-api">Application Programming Interface</a> file shows how we've designed the page we're
+              reading!
+            </li>
+          </ul>
+        </div>
+      </article>
+    <!-- Portfolio -->
+    <section>
+      <h2>Portfolio</h2>
+      <div id="portfolio" class="portfolio">
+        <section class="card">
+          <h3>Horiseon Digital Marketing</h3><a href="https://christopherbz.github.io/CodeRefactor/">Click Here to visit</a></header>
+          <img src="./assets/images/portfolio1.jpg" alt="portfolio1" />
+        </section>
+        <section class="card">
+          <h3>Portfolio-2</h3>
+          <img src="./assets/images/portfolio2.jpg" alt="portfolio2" />
+        </section>
+        <section class="card">
+          <h3>Portfolio-3</h3>
+          <img
+            src="./assets/images/portfolio3.jpg" alt="portfolio3" />
+        </section>
+        <section class="card">
+          <h3>Portfolio-4</h3>
+          <img
+            src="./assets/images/portfolio4.jpg" alt="portfolio4" />
+    </section>
+    <!-- Contact -->
+    <form id="contact">
+      <h2>Contact Me</h2>
+      <p>
+        <label for="username">Name:</label>
+        <input class="text-input" id="username" type="text" placeholder="First, Last" />
+      </p>
+      <p>
+        <label for="email">E-mail:</label>
+        <input class="text-input" id="email" type="text" placeholder="me@example.com" />
+      </p>
+      <p class="flex-row">
+        <label for="expertise">Work Required</label>
+        <select id="expertise">
+          <option>Consulting</option>
+          <option selected>Website Dev</option>
+          <option>Freelance</option>
+        </select>
+      </p>
+      <p>
+        <label for="comment">Comment:</label>
+        <textarea class="text-input" id="comment" placeholder="Job Scope"></textarea>
+      </p>
+      <p class="flex-row">
+        <input class="checkbox" id="agreement" type="checkbox" />
+        <label for="agreement">I agree to share my e-mail address with CB</label>
+      </p>
+      <p>
+        <button>Submit</button>
+      </p>
+    </form>
+  </main>
+<!-- Footer -->
+  <footer>
+    <span>Thanks for visiting!</span>
+  </footer>
+</body>
+
+</html>
